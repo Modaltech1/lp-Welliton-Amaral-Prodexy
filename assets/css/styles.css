@@ -358,3 +358,35 @@ section{scroll-margin-top:120px}
 }
 #localizacao{scroll-margin-top:120px}
 @media(max-width:720px){#localizacao{scroll-margin-top:92px}}
+
+@media (max-width:720px){
+  .quote-row{
+    grid-template-columns:1fr;
+    padding:22px 18px;
+    min-height:auto;
+  }
+
+  .quote-copy-full{
+    width:100%;
+    max-width:100%;
+  }
+
+  .quote-copy-full strong{
+    max-width:100%;
+    font-size:clamp(26px, 8vw, 36px);
+    line-height:1.02;
+    letter-spacing:-.06em;
+  }
+
+  .quote-copy-full p{
+    max-width:100%;
+    font-size:15px;
+    line-height:1.55;
+  }
+
+  .quote-copy-full small{
+    font-size:11px;
+    line-height:1.2;
+    letter-spacing:.08em;
+  }
+}
