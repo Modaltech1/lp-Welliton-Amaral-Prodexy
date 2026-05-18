@@ -11,12 +11,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/logo.png">
+  <meta property="og:image" content="assets/img/og-image.jpg">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
   <header class="header" id="header">
-    <a class="brand" href="#inicio"><span>WA</span><strong>Welligton Amaral</strong></a>
+    <a class="brand" href="#inicio" aria-label="Página inicial de Welligton Amaral"><img class="brand-logo"
+        src="assets/img/logo.png" alt="Logo de Welligton Amaral"><strong>Welligton Amaral</strong></a>
     <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false"><i></i><i></i></button>
     <nav class="nav" id="nav">
       <a href="#apresentacao">Sobre</a>
@@ -25,8 +29,7 @@
       <a href="#confianca">Confiança</a>
       <a href="#localizacao">Localização</a>
       <a href="#duvidas">Dúvidas</a>
-      <a href="#" data-instagram-link
-        aria-label="Instagram de Welligton Amaral">Instagram</a>
+      <a href="#" data-instagram-link aria-label="Instagram de Welligton Amaral">Instagram</a>
     </nav>
     <div class="nav-actions">
       <a class="instagram-header-link" href="#" data-instagram-link aria-label="Instagram de Welligton Amaral">
@@ -209,12 +212,47 @@
     <section class="trust trust-online light" id="confianca" data-header="dark">
       <div class="wrap">
         <div class="trust-grid merged">
-          <article class="big-card quote-card reveal" aria-label="Sequência simbólica e citação sobre cuidado de si">
-            <div class="quote-content">
-              <span class="quote-mark">“</span>
-              <h3>Pense, questione, cuide-se.</h3>
-              <p>Cuidar de si é uma forma de cuidado.</p>
-              <small>Michel Foucault</small>
+          <article class="big-card quote-card reveal" aria-label="Símbolos e significados do cuidado de si">
+            <div class="symbol-rows">
+              <div class="symbol-row">
+                <span class="symbol-box" aria-hidden="true"><img src="assets/img/symbol-alert.png" alt=""></span>
+                <div class="symbol-copy">
+                  <strong>Perceba-se</strong>
+                  <p>Reconheça os sinais que pedem atenção.</p>
+                </div>
+              </div>
+
+              <div class="symbol-row">
+                <span class="symbol-box" aria-hidden="true"><img src="assets/img/symbol-question.png" alt=""></span>
+                <div class="symbol-copy">
+                  <strong>Questione</strong>
+                  <p>Abra espaço para olhar sua história com mais clareza.</p>
+                </div>
+              </div>
+
+              <div class="symbol-row">
+                <span class="symbol-box" aria-hidden="true"><img src="assets/img/symbol-psi.png" alt=""></span>
+                <div class="symbol-copy">
+                  <strong>Escute-se</strong>
+                  <p>A psicoterapia pode ajudar a nomear o que hoje pesa em silêncio.</p>
+                </div>
+              </div>
+
+              <div class="symbol-row">
+                <span class="symbol-box" aria-hidden="true"><img src="assets/img/symbol-care.png" alt=""></span>
+                <div class="symbol-copy">
+                  <strong>Cuide-se</strong>
+                  <p>Cuidar da mente também é uma forma de cuidado integral.</p>
+                </div>
+              </div>
+
+              <div class="symbol-row quote-row">
+                <div class="symbol-copy quote-copy-full">
+                  <strong>Pense, questione, cuide-se.</strong>
+                  <p>Cuidar de si é uma forma de cuidado.</p>
+                  <small>Michel Foucault</small>
+                </div>
+              </div>
             </div>
           </article>
 
@@ -304,9 +342,12 @@
   </main>
 
   <footer class="footer">
-    <div>
-      <strong>Welligton Amaral</strong>
-      <span>Psicoterapia Clínica · CRP 16/11883-ES · CRA 17548</span>
+    <div class="footer-brand">
+      <img class="footer-logo" src="assets/img/logo.png" alt="Logo de Welligton Amaral">
+      <div class="footer-brand-copy">
+        <strong>Welligton Amaral</strong>
+        <span>Psicoterapia Clínica · CRP 16/11883-ES · CRA 17548</span>
+      </div>
     </div>
 
     <nav>
